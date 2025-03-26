@@ -6,7 +6,6 @@ This script processes invalid mappings and generates various reports to assist i
 1. Overview
 2. Functions
     - import_invalid_mappings_no_prior
-    - import_invalid_mappings_prior
     - create_tab_1a
     - create_tab_1b
     - acc_group_assessment
