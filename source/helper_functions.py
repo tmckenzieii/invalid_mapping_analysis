@@ -7,7 +7,6 @@ def acc_group_assessment(tab, global_acc, tab_name):
         print(f"{tab_name} is empty, skipping processing.")
     return tab
 
-# Cleaning and data manipulation functions for FCCS mappings file
 def prep_fccs_maps(fccs_maps):
 
     print("Cleaning FCCS mappings file")

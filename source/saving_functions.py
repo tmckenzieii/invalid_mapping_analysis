@@ -35,8 +35,8 @@ def save_invalid_mappings(invalid_mappings, tab_1a, tab_1a_ag, tab_1a_non_ag, ta
     return folder_selected
 
 # 
-def save_files_to_ship(accounting_groups_1a, accounting_groups_1b, new_profile_need_wf_details, need_details,
-                                    need_details_na, need_details_cala, need_details_apac, need_details_emea, user_confirmations, folder_selected): # import folder_selected
+def save_files_to_ship(accounting_groups_1a, accounting_groups_1b, new_profile_need_wf_details, need_details, user_confirmations, folder_selected):
+                                    # need_details_na,need_details_cala, need_details_apac, need_details_emea, Moved to test removing columns
     
     print("Saving files to ship to previously selected folder : ")
     
@@ -54,10 +54,10 @@ def save_files_to_ship(accounting_groups_1a, accounting_groups_1b, new_profile_n
         new_profile_need_wf_details.to_excel(writer_new_profile_need_wf_details, sheet_name='New Profiles', index=False)
         
         need_details.to_excel(writer_need_details, sheet_name='Invalid Mappings', index=False)
-        need_details_na.to_excel(writer_need_details, sheet_name='NA', index=False)
-        need_details_cala.to_excel(writer_need_details, sheet_name='CALA', index=False)
-        need_details_apac.to_excel(writer_need_details, sheet_name='APAC', index=False)
-        need_details_emea.to_excel(writer_need_details, sheet_name='EMEA', index=False)
+        # need_details_na.to_excel(writer_need_details, sheet_name='NA', index=False)
+        # need_details_cala.to_excel(writer_need_details, sheet_name='CALA', index=False)
+        # need_details_apac.to_excel(writer_need_details, sheet_name='APAC', index=False)
+        # need_details_emea.to_excel(writer_need_details, sheet_name='EMEA', index=False)
         
         user_confirmations.to_excel(writer_user_confirmations, sheet_name='1A Invalid Mappings', index=False) 
         
